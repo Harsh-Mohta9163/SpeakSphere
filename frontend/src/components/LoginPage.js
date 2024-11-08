@@ -7,7 +7,7 @@ const LoginPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const navigate = useNavigate(); // Initialize the navigation hook
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -18,10 +18,14 @@ const LoginPage = () => {
         username,
         password,
       });
+
       console.log('Login successful:', response.data);
-      
+
+      // Save access token in localStorage for subsequent requests
+      localStorage.setItem('access_token', response.data.access);
+
       // Redirect to the home page after successful login
-      navigate("/"); // Update this path to match your actual home route
+      navigate('/'); // Update this path to match your actual home route
     } catch (err) {
       console.error('Login error:', err.response?.data || err.message);
       setError('Invalid username or password.');
@@ -29,16 +33,16 @@ const LoginPage = () => {
   };
 
   return (
-    <body class="login-page">
+    <div className="login-page">
       <div className="pixel-login-container">
-        <div class="word">Hello</div>
-        <div class="word">Hola</div>
-        <div class="word">Bonjour</div>
-        <div class="word">Ciao</div>
-        <div class="word">नमस्ते</div>
+        <div className="word">Hello</div>
+        <div className="word">Hola</div>
+        <div className="word">Bonjour</div>
+        <div className="word">Ciao</div>
+        <div className="word">नमस्ते</div>
 
         <div className="pixel-header">
-          {/* <img src= {image} alt="Logo" className="pixel-logo" /> */}
+          {/* <img src={image} alt="Logo" className="pixel-logo" /> */}
           <h1 className="pixel-title">SpeakSphere</h1>
           <p className="pixel-tagline">Learn languages through games!</p>
         </div>
@@ -78,7 +82,7 @@ const LoginPage = () => {
           </div>
         </div>
       </div>
-    </body>
+    </div>
   );
 };
 
