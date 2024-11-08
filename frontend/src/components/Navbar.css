@@ -1,0 +1,35 @@
+/* src/components/Navbar.css */
+.pixel-navbar {
+    width: 220px;
+    background-color: #333;
+    min-height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+  }
+  
+  .pixel-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .pixel-navbar li {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .pixel-navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .pixel-navbar a.active {
+    text-decoration: underline;
+  }
+  
+  .pixel-navbar a:hover {
+    color: #ff0;
+  }
+
+  
