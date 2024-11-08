@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', monospace;
+  background: linear-gradient(to bottom right, #3b82f6, #9333ea); /* Blue to purple gradient */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.do {
+  padding-bottom: 20px;
+}
+
+.pixel-login-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.pixel-header {
+  margin-bottom: 20px;
+}
+
+.pixel-logo {
+  width: 100px;
+  height: auto;
+}
+
+.pixel-title {
+  color: #ffffff; /* White for contrast */
+  font-size: 2.5rem;
+  margin: 10px 0;
+  text-shadow: 0 0 10px #3b82f6, 0 0 20px #9333ea; /* Glowing effect */
+}
+
+.pixel-tagline {
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.pixel-login-box {
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black for contrast */
+  padding: 30px;
+  border: 4px solid #3b82f6;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 0px; /* Pixelated style */
+  box-shadow: 0 0 20px #9333ea, 0 0 40px #3b82f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Ensures children are centered */
+}
+
+.pixel-subtitle {
+  color: #3b82f6; /* Blue for a softer tone */
+  margin-bottom: 25px;
+}
+
+.pixel-error {
+  color: #ff4d4d;
+  font-size: 0.875rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.pixel-success {
+  color: #4caf50;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.pixel-input-group {
+  margin-bottom: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pixel-label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  color: #3b82f6; /* Matches the blue theme */
+  width: 100%;
+}
+
+.pixel-input {
+  width: 80%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #9333ea; /* Purple for a vibrant contrast */
+  color: #fff;
+  border-radius: 0px;
+  outline: none;
+}
+
+.pixel-input:focus {
+  border-color: #9333ea;
+  box-shadow: 0 0 10px #9333ea; /* Glowing effect when focused */
+}
+
+.pixel-login-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  background: linear-gradient(to right, #3b82f6, #9333ea); /* Gradient button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 0px;
+  font-family: 'Press Start 2P', monospace;
+  transition: 0.3s;
+  text-shadow: 0 0 10px #3b82f6;
+}
+
+.pixel-login-btn:hover {
+  background: linear-gradient(to right, #9333ea, #3b82f6); /* Reverse gradient */
+}
+
+.pixel-footer {
+  margin-top: 20px;
+}
+
+.pixel-link {
+  padding-top: 30px;
+  color: #3b82f6; /* Blue for the footer link */
+  text-decoration: none;
+}
+
+.pixel-link:hover {
+  text-decoration: underline;
+  color: #9333ea; /* Purple on hover */
+}
+
+@media (max-width: 600px) {
+  .pixel-login-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .pixel-title {
+    font-size: 1.5rem;
+  }
+
+  .pixel-input {
+    font-size: 0.9rem;
+    padding: 8px;
+    width: 90%;
+  }
+
+  .pixel-login-btn {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .pixel-logo {
+    width: 80px;
+  }
+
+  .pixel-footer p {
+    font-size: 0.9rem;
+  }
+
+  .pixel-link {
+    font-size: 0.9rem;
+  }
+}
