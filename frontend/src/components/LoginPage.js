@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../css/LoginPage.css';
-import image from './image.png';
+
 /* 
 app.use(express.static(path.join(__dirname, 'public'))); */
 const LoginPage = () => {
