@@ -7,6 +7,7 @@ from django.http import JsonResponse
 from rest_framework.decorators import api_view
 from rest_framework import status
 from rest_framework.response import Response
+from .models import *
 from rest_framework_simplejwt.tokens import RefreshToken
 
 @api_view(['POST'])
@@ -59,3 +60,28 @@ def login_user(request):
         }, status=status.HTTP_200_OK)
     else:
         return Response({"error": "Invalid username or password."}, status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['GET'])
+def leaderboard(request):
+    top_users = Profile.objects.order_by('-points')[:5]  # Get top 5 users by points
+    user_profile = Profile.objects.get(user=request.user)
+
+    # Calculate the current user's rank
+    all_profiles = Profile.objects.order_by('-points')
+    user_rank = list(all_profiles).index(user_profile) + 1
+
+    # Serialize the data
+    top_users_data = [
+        {"rank": i + 1, "name": user.user.username, "points": user.points}
+        for i, user in enumerate(top_users)
+    ]
+    your_rank_data = {
+        "rank": user_rank,
+        "name": request.user.username,
+        "points": user_profile.points
+    }
+
+    return JsonResponse({
+        "top_users": top_users_data,
+        "your_rank": your_rank_data
+    }, status=status.HTTP_200_OK)
