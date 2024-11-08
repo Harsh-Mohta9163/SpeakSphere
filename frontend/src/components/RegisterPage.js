@@ -2,12 +2,16 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import '../css/RegisterPage.css';
 
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
+
+
 const RegisterPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -20,15 +24,20 @@ const RegisterPage = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/register', {
+      const response = await axios.post('http://localhost:8000/api/register', {
         username,
         password,
       });
       console.log('Registration successful:', response.data);
-      setSuccess('Registration successful! You can now log in.');
+      setSuccess('Registration successful! Redirecting to login...');
+      
+      // Redirect to login page after successful registration
+      setTimeout(() => {
+        navigate('/login');
+      }, 2000); // Optional delay for displaying success message
     } catch (err) {
       console.error('Registration error:', err.response?.data || err.message);
-      setError('Failed to register. Please try again.');
+      setError(err.response?.data.error || 'Failed to register. Please try again.');
     }
   };
 
