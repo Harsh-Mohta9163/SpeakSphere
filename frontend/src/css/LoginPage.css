@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-body {
+.login-page {
   margin: 0;
   font-family: 'Press Start 2P', monospace;
   background: linear-gradient(45deg, #3b82f6, #9333ea);
@@ -42,7 +42,7 @@ body {
   }
 }
 
-.word {
+.login-page .word {
   position: absolute;
   font-size: 2rem;
   font-weight: bold;
@@ -52,74 +52,69 @@ body {
   opacity: 0;
 }
 
-.word:nth-child(1) {
+.login-page .word:nth-child(1) {
   top: 20%;
   left: 15%;
   animation-delay: 0s;
 }
 
-.word:nth-child(2) {
+.login-page .word:nth-child(2) {
   top: 40%;
   left: 70%;
   animation-delay: 1s;
 }
 
-.word:nth-child(3) {
+.login-page .word:nth-child(3) {
   top: 60%;
   left: 10%;
   animation-delay: 2s;
 }
 
-.word:nth-child(4) {
+.login-page .word:nth-child(4) {
   top: 80%;
   left: 70%;
   animation-delay: 3s;
 }
 
-.word:nth-child(5) {
+.login-page .word:nth-child(5) {
   top: 10%;
   left: 80%;
   animation-delay: 4s;
 }
 
-.do {
+.login-page .do {
   padding-bottom: 20px;
 }
 
-/* (Rest of your CSS remains unchanged) */
 
 
-.do {
-  padding-bottom: 20px;
-}
-
-.pixel-login-container {
+.login-page .pixel-login-container {
   text-align: center;
   padding: 20px;
 }
 
-.pixel-header {
+.login-page .pixel-header {
   margin-bottom: 20px;
 }
 
-.pixel-logo {
+.login-page .pixel-logo {
   width: 100px;
   height: auto;
 }
 
-.pixel-title {
+.login-page .pixel-title {
   color: #ffffff;
   font-size: 2.5rem;
   margin: 10px 0;
   text-shadow: 0 0 10px #3b82f6, 0 0 20px #9333ea;
 }
 
-.pixel-tagline {
+.login-page .pixel-tagline {
   font-size: 1rem;
   color: #e0e0e0;
 }
 
-.pixel-login-box {
+.login-page .pixel-login-box {
   background: rgba(0, 0, 0, 0.8);
   padding: 50px;
   padding-top: 40px;
@@ -130,30 +125,30 @@ body {
   box-shadow: 0 0 20px #9333ea, 0 0 40px #3b82f6;
 }
 
-.pixel-subtitle {
+.login-page .pixel-subtitle {
   color: #3b82f6;
   margin-bottom: 25px;
 }
 
-.pixel-error {
+.login-page .pixel-error {
   color: #ff4d4d;
   font-size: 0.875rem;
   margin-bottom: 15px;
 }
 
-.pixel-input-group {
+.login-page .pixel-input-group {
   margin-bottom: 25px;
   padding-right: 20px;
 }
 
-.pixel-label {
+.login-page .pixel-label {
   display: block;
   text-align: left;
   margin-bottom: 8px;
   color: #3b82f6;
 }
 
-.pixel-input {
+.login-page .pixel-input {
   width: 100%;
   padding: 12px;
   font-size: 1rem;
@@ -164,12 +159,12 @@ body {
   outline: none;
 }
 
-.pixel-input:focus {
+.login-page .pixel-input:focus {
   border-color: #9333ea;
   box-shadow: 0 0 10px #9333ea;
 }
 
-.pixel-login-btn {
+.login-page .pixel-login-btn {
   width: 100%;
   padding: 15px;
   font-size: 1rem;
@@ -183,21 +178,21 @@ body {
   text-shadow: 0 0 10px #3b82f6;
 }
 
-.pixel-login-btn:hover {
+.login-page .pixel-login-btn:hover {
   background: linear-gradient(to right, #9333ea, #3b82f6);
 }
 
-.pixel-footer {
+.login-page .pixel-footer {
   margin-top: 20px;
 }
 
-.pixel-link {
+.login-page .pixel-link {
   padding-top: 30px;
   color: #3b82f6;
   text-decoration: none;
 }
 
-.pixel-link:hover {
+.login-page .pixel-link:hover {
   text-decoration: underline;
   color: #9333ea;
 }
