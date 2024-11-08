@@ -14,7 +14,7 @@ import LanguageCourses from './components/LanguageCourses';
 
 function App() {
   return (
-    <Router>
+
       <div className="app-container">
         <Navbar />
         <div className="main-content">
@@ -30,7 +30,7 @@ function App() {
           </Routes>
         </div>
       </div>
-    </Router>
+
   );
 }
 
