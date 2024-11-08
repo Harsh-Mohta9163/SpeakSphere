@@ -1,0 +1,157 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .container {
+    align-self: center;
+    margin-left: 34px;
+    width: 916px;
+    max-width: 100%;
+  }
+  
+  .content {
+    display: flex;
+    gap: 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .content {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+  
+  .imageWrapper {
+    flex: 1;
+  }
+  
+  .headerImage {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+  }
+  
+  @media (max-width: 991px) {
+    .headerImage {
+      max-width: 100%;
+      margin-top: 18px;
+    }
+  }
+  
+  .textContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #4b4b4b;
+    margin: auto 0;
+    font: 700 13px Inter, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .textContent {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .title {
+    font-size: 29px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .titlePart {
+    display: block;
+  }
+  
+  .titlePart:last-child {
+    font-size: 30px;
+    margin-top: 17px;
+  }
+  
+  .ctaButton {
+    border-radius: 12px;
+    background-color: #58cc02;
+    box-shadow: 0 4px 0 #58a700;
+    margin-top: 45px;
+    width: 330px;
+    max-width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 18px 70px;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+  }
+  
+  @media (max-width: 991px) {
+    .ctaButton {
+      margin-top: 40px;
+      padding: 18px 20px;
+    }
+  }
+  
+  .secondaryButton {
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 2px 0 #e5e5e5;
+    margin-top: 16px;
+    width: 330px;
+    max-width: 100%;
+    color: #1cb0f6;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 19px 56px;
+    border: 2px solid #e5e5e5;
+    cursor: pointer;
+    font: inherit;
+  }
+  
+  @media (max-width: 991px) {
+    .secondaryButton {
+      padding: 19px 20px;
+    }
+  }
+  
+  .languageNav {
+    border-top: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    margin-top: 118px;
+    width: 100%;
+    padding: 33px 70px;
+  }
+  
+  @media (max-width: 991px) {
+    .languageNav {
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 33px 20px;
+    }
+  }
+  
+  .languageList {
+    display: flex;
+    width: 100%;
+    max-width: 1036px;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  .navIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 14px;
+  }

@@ -1,0 +1,184 @@
+.container {
+    background-color: #fff;
+    display: flex;
+    max-width: 912px;
+    flex-direction: column;
+    padding: 11px 24px 48px;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  @media (max-width: 991px) {
+    .container {
+      padding: 0 20px;
+    }
+  }
+  
+  .header {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    font-weight: 700;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 991px) {
+    .header {
+      max-width: 100%;
+      margin-right: 2px;
+    }
+  }
+  
+  .title {
+    color: #4b4b4b;
+    font-size: 22px;
+    line-height: 2;
+    text-shadow: 2px 2px #000;
+    image-rendering: pixelated;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 2px solid #000;
+  }
+  
+  @media (max-width: 991px) {
+    .title {
+      max-width: 100%;
+    }
+  }
+  
+  .languageSelector {
+    display: flex;
+    gap: 13px;
+    font-size: 14px;
+    color: #afafaf;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin: auto 0;
+    image-rendering: pixelated;
+    padding: 5px;
+    background-color: #e0e0e0;
+    border: 1px solid #000;
+  }
+  
+  .selectedLanguage {
+    flex-grow: 1;
+  }
+  
+  .dropdownIcon {
+    aspect-ratio: 1.67;
+    object-fit: contain;
+    object-position: center;
+    width: 15px;
+    align-self: start;
+    image-rendering: pixelated;
+  }
+  
+  .courseGrid {
+    margin-top: 43px;
+  }
+  
+  @media (max-width: 991px) {
+    .courseGrid {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .courseRow {
+    gap: 20px;
+    display: flex;
+  }
+  
+  @media (max-width: 991px) {
+    .courseRow {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+  
+  .courseCard {
+    border-radius: 16px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-bottom-width: 4px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 129px 40px 47px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    image-rendering: pixelated;
+  }
+  
+  .courseCard:hover,
+  .courseCard:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 991px) {
+    .courseCard {
+      margin-top: 22px;
+      padding: 100px 20px 0;
+    }
+  }
+  
+  .courseName {
+    color: #4b4b4b;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 1px 1px #000;
+  }
+  
+  .learnerCount {
+    color: #777;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    margin-top: 14px;
+  }
+  
+  .betaBadge {
+    border-radius: 5px;
+    background-color: #1899d6;
+    align-self: flex-end;
+    font-size: 12px;
+    color: #fff;
+    white-space: nowrap;
+    text-transform: uppercase;
+    line-height: 2;
+    padding: 9px 10px;
+    margin-bottom: 10px;
+    image-rendering: pixelated;
+  }
+  
+  @media (max-width: 991px) {
+    .betaBadge {
+      white-space: initial;
+    }
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+  .flag {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+    image-rendering: pixelated;
+  }
