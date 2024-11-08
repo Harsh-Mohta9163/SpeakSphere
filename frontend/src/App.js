@@ -9,6 +9,8 @@ import Profile from './pages/Profile';
 import Quests from './pages/Quests';
 import Login from './components/LoginPage';
 import Register from './components/RegisterPage';
+import LanguageLearningHeader from './components/LanguageLearningHeader';
+import LanguageCourses from './components/LanguageCourses';
 
 function App() {
   return (
